@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('../fonts/iconfont.eot');
+  src: url('../fonts/iconfont.eot?#iefix') format('eot'),
+    url('../fonts/iconfont.woff2') format('woff2'),
+    url('../fonts/iconfont.woff') format('woff'),
+    url('../fonts/iconfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$icon-arrow-right: "\EA01";
+$icon-facebook: "\EA02";
+$icon-instagram: "\EA03";
+$icon-telegram: "\EA04";
+$icon-twitter: "\EA05";
+$icon-vk: "\EA06";
+$icon-youtube: "\EA07";
+
+
+%icon {
+  font-family: "iconfont";
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: auto;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+  @extend %icon;
+  display: inline-block;
+}
+
+.icon-arrow-right:before { content: $icon-arrow-right; }
+.icon-facebook:before { content: $icon-facebook; }
+.icon-instagram:before { content: $icon-instagram; }
+.icon-telegram:before { content: $icon-telegram; }
+.icon-twitter:before { content: $icon-twitter; }
+.icon-vk:before { content: $icon-vk; }
+.icon-youtube:before { content: $icon-youtube; }

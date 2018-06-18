@@ -1,0 +1,24 @@
+.office
+  background-image: url('../img/bg-office.jpg')
+  position: relative
+  padding: 90px 0
+  color: $white
+  +cover
+  &:before
+    +coverdiv
+    content: ''
+    background-blend-mode: multiply
+    background-image: linear-gradient(rgba(18, 18, 18, 0.44), rgba(18, 18, 18, 0.44))
+  .heading
+    margin-bottom: 30px
+  h3
+    color: $white
+    margin-bottom: 22px
+    position: relative
+    z-index: 10
+  p
+    color: $white
+    margin-bottom: 40px
+    width: 40%
+    position: relative
+    z-index: 10
